@@ -1,0 +1,103 @@
+* {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.custom-nav {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 40px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  font-weight: 600;
+}
+
+.custom-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-nav li {
+  display: inline-block;
+  margin-right: 20px;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+.custom-nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+#app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  margin: 30px 0px 0px 20px;
+  text-align: center;
+  font-size: x-large;
+}
+
+.appointment {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.appointment-block {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.appointment-block h2 {
+  margin-top: 0;
+}
+
+.appointment-block .priority {
+  font-weight: bold;
+  color: red;
+}
+
+.appointment-block .type {
+  color: #888;
+}
+
+.scroll-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top-button.show {
+  display: block;
+}
+
+.scroll-to-top-button:hover {
+  opacity: 0.8;
+}
