@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" type="module"></script>
+    <title>CALENDAR APP</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>CALENDAR APP</h1>
+
+      <!-- 
+      Sistemare custom-nav
+      quando la lista appuntamenti è vuota mandare a video messaggio 
+      -->
+
+      <div class="custom-nav">
+        <a href="#section1">Section 1</a>
+        <a href="#section2">Section 2</a>
+        <a href="#section3">Section 3</a>
+      </div>
+
+      <div class="section" id="section1"></div>
+
+      <div class="section" id="section2"></div>
+
+      <div class="section" id="section3"></div>
+
+      <button id="scrollToTopButton" class="scroll-to-top-button">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+
+      <div id="noAppointmentsMessage" class="no-appointments-message">
+        <p>Nessun appuntamento disponibile.</p>
+      </div>
+
+      <div id="appContainer" style="display: none"></div>
+    </div>
+  </body>
+</html>
