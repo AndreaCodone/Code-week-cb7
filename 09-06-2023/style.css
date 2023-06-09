@@ -1,0 +1,194 @@
+* {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+}
+
+.custom-nav {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 40px 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.custom-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-nav li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+}
+
+.custom-nav a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.35s;
+}
+
+.custom-nav li:hover {
+  background-color: #e6e6e6;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+#app {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h3 {
+  margin: 50px 0 10px 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+.appointment {
+  border: none;
+  margin: 10px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s;
+}
+
+.appointment:hover {
+  background-color: #fff;
+}
+
+.appointment-block {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  display: block;
+  background-color: #f4f4f4;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.appointment-block h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.appointment-block .priority {
+  font-weight: bold;
+}
+
+.appointment-block .type {
+  font-weight: bold;
+  color: #888;
+}
+
+.appointment i {
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  transition: color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+}
+
+.appointment i:hover {
+  background-color: #e6e6e6;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1),
+    -4px -4px 8px rgba(255, 255, 255, 0.5);
+}
+
+i {
+  cursor: pointer;
+}
+
+/* Icon style for deleting the appointment */
+i.fa-times {
+  color: #e74c3c;
+}
+
+i.fa-check {
+  color: #27ae60;
+}
+
+i:hover {
+  color: #555;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.appointment.completed {
+  background-color: #6be619;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+    -10px -10px 20px rgba(255, 255, 255, 0.5);
+}
+
+.no-appointments-message {
+  display: none;
+  color: #e74c3c;
+  font-weight: bold;
+  text-align: center;
+}
+
+.scroll-to-top-button {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 40px;
+  height: 40px;
+  background-color: #f4f4f4;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: opacity 0.35s ease-in-out;
+}
+
+.scroll-to-top-button.show {
+  display: block;
+}
+
+.scrollspy-section {
+  padding-top: 40px;
+  margin-top: -40px;
+  position: relative;
+}
